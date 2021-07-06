@@ -16,7 +16,7 @@ public class PrototypeHeroDemo : MonoBehaviour {
     private Rigidbody2D         m_body2d;
     private Sensor_Prototype    m_groundSensor;
     private AudioSource         m_audioSource;
-    private AudioManager_PrototypeHero m_audioManager;
+    //private AudioManager_PrototypeHero m_audioManager;
     private bool                m_grounded = false;
     private bool                m_moving = false;
     private int                 m_facingDirection = 1;
@@ -28,7 +28,7 @@ public class PrototypeHeroDemo : MonoBehaviour {
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_audioSource = GetComponent<AudioSource>();
-        m_audioManager = AudioManager_PrototypeHero.instance;
+        //m_audioManager = AudioManager_PrototypeHero.instance;
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Prototype>();
     }
 
@@ -132,7 +132,7 @@ public class PrototypeHeroDemo : MonoBehaviour {
     // These functions are called inside the animation files
     void AE_runStop()
     {
-        m_audioManager.PlaySound("RunStop");
+        //m_audioManager.PlaySound("RunStop");
         // Spawn Dust
         float dustXOffset = 0.6f;
         SpawnDustEffect(m_RunStopDust, dustXOffset);
@@ -140,19 +140,19 @@ public class PrototypeHeroDemo : MonoBehaviour {
 
     void AE_footstep()
     {
-        m_audioManager.PlaySound("Footstep");
+        //m_audioManager.PlaySound("Footstep");
     }
 
     void AE_Jump()
     {
-        m_audioManager.PlaySound("Jump");
+        //m_audioManager.PlaySound("Jump");
         // Spawn Dust
         SpawnDustEffect(m_JumpDust);
     }
 
     void AE_Landing()
     {
-        m_audioManager.PlaySound("Landing");
+        //m_audioManager.PlaySound("Landing");
         // Spawn Dust
         SpawnDustEffect(m_LandingDust);
     }
