@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8570616f1840285428e936f7173cda4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  builingUpgradePrefab: {fileID: 0}
+  builingUpgradePrefab: {fileID: 955472137140173209, guid: 287dca8107bb64548b88be0e5bf0b135, type: 3}
   price: 20
 --- !u!1001 &5104681449761467339
 PrefabInstance:
