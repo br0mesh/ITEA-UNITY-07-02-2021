@@ -60,15 +60,15 @@ namespace Assets.Scipts.Character
         }
         public void BuildBuilding()
         {
-            if (resourceManager.Money < buildingPlace.GetUpgradePrice())
-            {
-                Debug.LogError("Incorrect money amount");
-                return;
-            }
+            //if (resourceManager.GetResource(re).Value < buildingPlace.GetUpgradePrice())
+            //{
+            //    Debug.LogError("Incorrect money amount");
+            //    return;
+            //}
 
-            resourceManager.Money -= buildingPlace.GetUpgradePrice();
+            //resourceManager.Money.Value -= buildingPlace.GetUpgradePrice();
 
-            buildingPlace.Build();
+            //buildingPlace.Build();
         }
 
         private HealthComponent[] GetAllHealthComponent(Collider2D[] colliders)
