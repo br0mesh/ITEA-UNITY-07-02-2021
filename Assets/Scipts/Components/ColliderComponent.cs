@@ -10,6 +10,7 @@ namespace Assets.Scipts.Components
     public class ColliderComponent : MonoBehaviour
     {
         [SerializeField] private CircleCollider2D circleCollider;
+        [SerializeField] private BoxCollider2D boxCollider;
         [SerializeField] private List<Collider2D> collidersInRadius;
 
         public List<Collider2D> CollidersInRadius { get => collidersInRadius; }
