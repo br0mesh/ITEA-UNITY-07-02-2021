@@ -17,6 +17,8 @@ namespace Assets.Scipts.Character
 
         [SerializeField] private HealthComponent healthComponent;
         [SerializeField] private AttackComponent attackComponent;
+        [SerializeField] private AttackComponent2 energyLeak;
+        [SerializeField] private AttackComponent3 damage3;
         [SerializeField] private ColliderComponent colliderComponent;
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -38,6 +40,7 @@ namespace Assets.Scipts.Character
             }
         }
 
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.B))
@@ -50,39 +53,58 @@ namespace Assets.Scipts.Character
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                var a = GetAllHealthComponent(colliderComponent.CollidersInRadius.ToArray());
-
-                for (int i = 0; i < a.Length; i++)
+                var b = GetAllEnergyComponent(colliderComponent.CollidersInRadius.ToArray());
+                var a = GetAllHealthComponentFiering(colliderComponent.CollidersInRadius.ToArray());
+                for (int i = 0; i < b.Length; i++)
                 {
-                    attackComponent.ApplyDamage(a[i]);
+                    attackComponent.ApplyDamage(b[i]);
+                    energyLeak.ApplyEnergyLeak(b[i]);
+                   
+                    damage3.ApplyEnergyLeak(a[i]);
                 }
+               
             }
         }
         public void BuildBuilding()
         {
-            if (resourceManager.Money < buildingPlace.GetUpgradePrice())
-            {
-                Debug.LogError("Incorrect money amount");
-                return;
-            }
+            //if (resourceManager.GetResource(re).Value < buildingPlace.GetUpgradePrice())
+            //{
+            //    Debug.LogError("Incorrect money amount");
+            //    return;
+            //}
 
-            resourceManager.Money -= buildingPlace.GetUpgradePrice();
+            //resourceManager.Money.Value -= buildingPlace.GetUpgradePrice();
 
-            buildingPlace.Build();
+            //buildingPlace.Build();
         }
 
-        private HealthComponent[] GetAllHealthComponent(Collider2D[] colliders)
+        private HealthComponentFiering[] GetAllHealthComponentFiering(Collider2D[] colliders)
         {
-            List<HealthComponent> healthComponents = new List<HealthComponent>();
+            List<HealthComponentFiering> healthComponents = new List<HealthComponentFiering>();
             for (int i = 0; i < colliders.Length; i++)
             {
                 Component component;
-                if (colliders[i].gameObject.TryGetComponent(typeof(HealthComponent), out component))
+                if (colliders[i].gameObject.TryGetComponent(typeof(HealthComponentFiering), out component))
                 {
-                    healthComponents.Add((HealthComponent)component);
+                    healthComponents.Add((HealthComponentFiering)component);
                 }
             }
             return healthComponents.ToArray();
+        }
+
+        /* Find energy components (added element)*/
+        private HealthComponent2[] GetAllEnergyComponent(Collider2D[] colliders)
+        {
+            List<HealthComponent2> energyComponents = new List<HealthComponent2>();
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                Component component;
+                if (colliders[i].gameObject.TryGetComponent(typeof(HealthComponent2), out component))
+                {
+                    energyComponents.Add((HealthComponent2)component);
+                }
+            }
+            return energyComponents.ToArray();
         }
     }
 }

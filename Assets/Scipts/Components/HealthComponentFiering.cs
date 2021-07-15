@@ -1,11 +1,15 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+
 
 namespace Assets.Scipts.Components
 {
-    public class HealthComponent : MonoBehaviour
+    public class HealthComponentFiering : MonoBehaviour
     {
         [SerializeField] private int health;
+        private bool allowDamage = true;
         public int Health
         {
             get
@@ -21,10 +25,22 @@ namespace Assets.Scipts.Components
         public Action<int> OnHealthChanged { get; }
         public Action OnDead { get; }
 
-        public void ProcessDamage(AttackComponent attackComponent)
+
+        private void Start()
+        {
+            StartCoroutine(waiter());
+        }
+
+        IEnumerator waiter()
+        {
+            
+            yield return new WaitForSeconds(5);
+        }
+        public void ProcessDamage(AttackComponent3 attackComponent)
         {
             health -= attackComponent.Damage;
-
+            waiter();
+         
             if (health <= 0)
             {
                 isDead = true;
@@ -33,8 +49,11 @@ namespace Assets.Scipts.Components
             }
 
             OnHealthChanged?.Invoke(health);
+            
         }
     }
-    
+   
+   
 }
+
 

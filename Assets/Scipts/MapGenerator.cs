@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
@@ -24,7 +25,6 @@ public class MapGenerator : MonoBehaviour
 
             groundTile.transform.position = new Vector3(-groundSize / 2 + i, 0, 0);
         }
-
     }
     private void SpawnCharacter()
     {
