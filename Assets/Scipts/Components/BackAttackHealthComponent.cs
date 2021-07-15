@@ -10,20 +10,10 @@ namespace Assets.Scipts.Components
     public class BackAttackHealthComponent: MonoBehaviour
     {
         [SerializeField]private int healthback;
+        [SerializeField]private HealthComponent health;
         
 
-        public int HealthBack
-        {
-            get
-            {
-                return healthback;
-            }
-            private set
-            {
-                
-            }
-        }
-        
+
 
 
     }
