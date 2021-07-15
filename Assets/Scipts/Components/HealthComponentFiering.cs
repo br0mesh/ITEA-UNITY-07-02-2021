@@ -10,6 +10,8 @@ namespace Assets.Scipts.Components
     {
         [SerializeField] private int health;
         private bool allowDamage = true;
+
+        [SerializeField] private float timeBetweenDamage;
         public int Health
         {
             get
@@ -28,19 +30,29 @@ namespace Assets.Scipts.Components
 
         private void Start()
         {
-            StartCoroutine(waiter());
+
+            //StartCoroutine(waiter());
         }
 
         IEnumerator waiter()
         {
-            
-            yield return new WaitForSeconds(5);
+            allowDamage = false;
+            yield return new WaitForSeconds(timeBetweenDamage);
+            allowDamage = true;
         }
         public void ProcessDamage(AttackComponent3 attackComponent)
         {
+            if(!allowDamage)
+            {
+                return;
+            }
+
             health -= attackComponent.Damage;
+            Debug.Log("Not start coturine");
             waiter();
-         
+            Debug.Log("Not start coturine - FINISHED");
+
+
             if (health <= 0)
             {
                 isDead = true;
@@ -49,7 +61,8 @@ namespace Assets.Scipts.Components
             }
 
             OnHealthChanged?.Invoke(health);
-            
+            Debug.Log("start coturine");
+            StartCoroutine(waiter());
         }
     }
    
