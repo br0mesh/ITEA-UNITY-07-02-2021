@@ -29,6 +29,7 @@ namespace Assets.Scipts.Components
         public void ProcessDamage(AttackComponent attackComponent)
         {
             health -= attackComponent.Damage;
+            
 
             if (health <= 0)
             {
@@ -36,8 +37,13 @@ namespace Assets.Scipts.Components
                 health = 0;
                 OnDead?.Invoke();
             }
+            if (isDead == true)
+            {
+                Destroy(gameObject);
+            }
 
             OnHealthChanged?.Invoke(health);
         }
+        
     }
 }
