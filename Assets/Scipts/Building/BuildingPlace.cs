@@ -13,6 +13,7 @@ namespace Assets.Scipts.Building
 
         [SerializeField] private BaseBuilding building;
         public BaseBuilding Building { get => building; }
+        private int build = 0;
 
         [SerializeField] private GameObject UIHolder;
 
@@ -25,7 +26,8 @@ namespace Assets.Scipts.Building
             }
             building = Instantiate(buildingPrefab.gameObject, transform).GetComponent<BaseBuilding>();
             building.Build();
-            buildingPrefab = building.BuildingToUpgrade;
+            buildingPrefab = building.BuildingToUpgrade[build];
+            build++;
         }
         public int GetUpgradePrice()
         {

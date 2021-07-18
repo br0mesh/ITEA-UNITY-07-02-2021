@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BaseBuilding : MonoBehaviour
 {
-    [SerializeField] private BaseBuilding builingUpgradePrefab;
-    public BaseBuilding BuildingToUpgrade { get=> builingUpgradePrefab; }
+    [SerializeField] private BaseBuilding[] builingUpgradePrefab;
+    public BaseBuilding[] BuildingToUpgrade { get=> builingUpgradePrefab; }
 
     private bool isBuilded;
     public bool IsBuilded { get => isBuilded; }
