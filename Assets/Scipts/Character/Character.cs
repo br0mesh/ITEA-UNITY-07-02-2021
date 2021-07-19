@@ -18,7 +18,6 @@ namespace Assets.Scipts.Character
         [SerializeField] private HealthComponent healthComponent;
         [SerializeField] private AttackComponent attackComponent;
         [SerializeField] private ColliderComponent colliderComponent;
-        [SerializeField] private BackAttackComponent backAttackComponent;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {

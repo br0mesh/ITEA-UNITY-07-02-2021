@@ -8,6 +8,12 @@ namespace Assets.Scipts.Components
     public class HealthComponent : MonoBehaviour
     {
         [SerializeField] private int health;
+        [SerializeField] private int kd;
+        private bool allowDamage = true;
+        private void Start()
+        {
+            StartCoroutine(DamageKD());
+        }
         public int Health
         {
             get
@@ -28,8 +34,12 @@ namespace Assets.Scipts.Components
 
         public void ProcessDamage(AttackComponent attackComponent)
         {
+            if (!allowDamage)
+            {
+                return;
+            }
             health -= attackComponent.Damage;
-            
+            DamageKD();
 
             if (health <= 0)
             {
@@ -43,6 +53,13 @@ namespace Assets.Scipts.Components
             }
 
             OnHealthChanged?.Invoke(health);
+            StartCoroutine(DamageKD());
+        }
+        IEnumerator DamageKD()
+        {
+            allowDamage = false;
+            yield return new WaitForSeconds(kd);
+            allowDamage = true;
         }
         
     }
