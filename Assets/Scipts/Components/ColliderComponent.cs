@@ -9,13 +9,16 @@ namespace Assets.Scipts.Components
 {
     public class ColliderComponent : MonoBehaviour
     {
-        [SerializeField] private CircleCollider2D circleCollider;
         [SerializeField] private List<Collider2D> collidersInRadius;
+
 
         public List<Collider2D> CollidersInRadius { get => collidersInRadius; }
 
         public Action<Collider2D> OnTriggerEnter;
         public Action<Collider2D> OnTriggerExit;
+
+
+       
 
         private void OnTriggerEnter2D(Collider2D collision)
         {

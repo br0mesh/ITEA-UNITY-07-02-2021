@@ -12,7 +12,8 @@ namespace Assets.Scipts.Components
         [SerializeField] private int damage;
         public int Damage { get => damage; }
 
-        public Action<HealthComponent> OnDamageDone;
+        public Action<HealthComponent> OnDamageDone { get; set; }
+
         public void ApplyDamage(HealthComponent healthComponent)
         {
             healthComponent.ProcessDamage(this);

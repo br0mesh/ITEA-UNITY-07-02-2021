@@ -16,8 +16,11 @@ namespace Assets.Scipts.Character
         [SerializeField] private BuildingPlace buildingPlace;
 
         [SerializeField] private HealthComponent healthComponent;
+        [SerializeField] private EnergyComponent energyComponent;
         [SerializeField] private AttackComponent attackComponent;
-        [SerializeField] private ColliderComponent colliderComponent;
+        [SerializeField] private EnergyAttackComponent energyAttackComponent;
+        [SerializeField] private ColliderComponent frontColliderComponent;
+        [SerializeField] private ColliderComponent backColliderComponent;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -50,12 +53,30 @@ namespace Assets.Scipts.Character
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                var a = GetAllHealthComponent(colliderComponent.CollidersInRadius.ToArray());
+                var health = GetAllHealthComponent(frontColliderComponent.CollidersInRadius.ToArray());
+                var energy = GetAllEnergyComponent(frontColliderComponent.CollidersInRadius.ToArray());
 
-                for (int i = 0; i < a.Length; i++)
+                for (int i = 0; i < health.Length; i++)
                 {
-                    attackComponent.ApplyDamage(a[i]);
+                    attackComponent.ApplyDamage(health[i]);
                 }
+
+                for (int i = 0; i < energy.Length; i++)
+                {
+                    energyAttackComponent.ApplyEnergyDamage(energy[i]);
+
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                var health = GetAllHealthComponent(backColliderComponent.CollidersInRadius.ToArray());
+
+                for (int i = 0; i < health.Length; i++)
+                {
+                    attackComponent.ApplyDamage(health[i]);
+                }
+
             }
         }
         public void BuildBuilding()
@@ -83,6 +104,19 @@ namespace Assets.Scipts.Character
                 }
             }
             return healthComponents.ToArray();
+        }
+        private EnergyComponent[] GetAllEnergyComponent(Collider2D[] colliders)
+        {
+            List<EnergyComponent> energyComponents = new List<EnergyComponent>();
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                Component component;
+                if (colliders[i].gameObject.TryGetComponent(typeof(EnergyComponent), out component))
+                {
+                    energyComponents.Add((EnergyComponent)component);
+                }
+            }
+            return energyComponents.ToArray();
         }
     }
 }
