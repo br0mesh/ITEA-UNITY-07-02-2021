@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+  kd: 2
   isDead: 0
 --- !u!61 &535984312
 BoxCollider2D:
@@ -337,22 +338,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.030013, y: 1.5139351}
   m_EdgeRadius: 0
---- !u!114 &535984313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535984310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa4c98a550a9ece4984a84d27f93e584, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  isDead: 0
-  health: 0
-  isDead: 0
 --- !u!1 &546216365
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  kd: 0
   isDead: 0
 --- !u!212 &546216368
 SpriteRenderer:
@@ -764,6 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  kd: 0
   isDead: 0
 --- !u!4 &848801972
 Transform:
@@ -797,7 +784,6 @@ MonoBehaviour:
   healthComponent: {fileID: 848801971}
   attackComponent: {fileID: 848801970}
   colliderComponent: {fileID: 1949829565}
-  backAttackComponent: {fileID: 0}
 --- !u!1 &965272224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5126507520524490402, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
