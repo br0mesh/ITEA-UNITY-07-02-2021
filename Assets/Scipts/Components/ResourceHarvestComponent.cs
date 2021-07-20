@@ -14,7 +14,7 @@ public class ResourceHarvestComponent : MonoBehaviour
 
     [SerializeField] private ResourceScriptableObject resourceData;
 
-    [SerializeField] private ResourceManager resourceManager;
+    //[SerializeField] private ResourceManager resourceManager;
 
     private IEnumerator harvestCoroutine;
     //private BaseResource baseResource;
@@ -42,7 +42,7 @@ public class ResourceHarvestComponent : MonoBehaviour
         {
             yield return new WaitForSeconds(timeToHarvest);
 
-            resourceManager.AddResource(resourceData.Type, resourceAmount);
+            ResourceManager.Instance.AddResource(resourceData.Type, resourceAmount);
             //baseResource.Value += resourceAmount;
             Debug.Log("Resource harvested");
         }

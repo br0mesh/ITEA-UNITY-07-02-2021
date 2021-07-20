@@ -1,6 +1,7 @@
 ﻿using Assets.Scipts.Building;
 using Assets.Scipts.Components;
 using Assets.Scipts.ResourceManage;
+using Assets.Scipts.Resources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,18 @@ namespace Assets.Scipts.Character
 {
     public class Character : MonoBehaviour
     {
-        [SerializeField] private ResourceManager resourceManager;
+       // [SerializeField] private ResourceManager resourceManager;
         [SerializeField] private BuildingPlace buildingPlace;
 
         [SerializeField] private HealthComponent healthComponent;
         [SerializeField] private AttackComponent attackComponent;
         [SerializeField] private ColliderComponent colliderComponent;
 
+        [ContextMenu("test")]
+        private void test()
+        {
+            ((IAttackComponent)attackComponent).ApplyDamage(healthComponent);
+        }
         private void OnTriggerEnter2D(Collider2D collision)
         {
             var buildingPlace = collision.gameObject.GetComponent<BuildingPlace>();
@@ -60,6 +66,7 @@ namespace Assets.Scipts.Character
         }
         public void BuildBuilding()
         {
+            var  wood =ResourceManager.Instance.GetResource(ResourceType.wood);
             //if (resourceManager.GetResource(re).Value < buildingPlace.GetUpgradePrice())
             //{
             //    Debug.LogError("Incorrect money amount");

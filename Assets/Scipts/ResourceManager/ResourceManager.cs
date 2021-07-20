@@ -8,9 +8,9 @@ using UnityEngine;
 
 namespace Assets.Scipts.ResourceManage
 {
-    public class ResourceManager : MonoBehaviour
+    public class ResourceManager : Singleton<ResourceManager>
     {
-        [SerializeField] private List<ResourceContainer> resurces;
+        [SerializeField] private List<ResourceContainer> resurces = new List<ResourceContainer>();
 
         public BaseResource GetResource(ResourceType resourceType)
         {

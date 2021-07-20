@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Scipts.Components
@@ -14,20 +12,18 @@ namespace Assets.Scipts.Components
             {
                 return health;
             }
-            private set
-            {
-                health = value;
-            }
+            private set => health = value;
         }
 
         [SerializeField] private bool isDead;
         public bool IsDead { get => isDead; }
 
-        public Action<int> OnHealthChanged { get; }
+        public Action<int> OnHealthChanged { get; set; }
         public Action OnDead { get; }
 
-        public void ProcessDamage(AttackComponent attackComponent)
+        public void ProcessDamage(IAttackComponent attackComponent)
         {
+            //if(attackComponent.type != hollyAttack) return;
             health -= attackComponent.Damage;
 
             if (health <= 0)
@@ -40,4 +36,6 @@ namespace Assets.Scipts.Components
             OnHealthChanged?.Invoke(health);
         }
     }
+    
 }
+

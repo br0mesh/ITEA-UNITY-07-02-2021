@@ -7,14 +7,14 @@ using UnityEngine;
 
 namespace Assets.Scipts.Components
 {
-    public class AttackComponent : MonoBehaviour
+    public class AttackComponent : MonoBehaviour, IAttackComponent
     {
         [SerializeField] private int damage;
         public int Damage { get => damage; }
-
-        public Action<HealthComponent> OnDamageDone;
+        public Action<HealthComponent> OnDamageDone { get; set; }
         public void ApplyDamage(HealthComponent healthComponent)
         {
+            Debug.Log("AttackComponent");
             healthComponent.ProcessDamage(this);
 
             OnDamageDone?.Invoke(healthComponent);
