@@ -2,7 +2,9 @@
 using Assets.Scipts.Components;
 using Assets.Scipts.ResourceManage;
 using Assets.Scipts.Resources;
+using Assets.Scipts.SkillTree.SkillPowerUp;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,10 +22,18 @@ namespace Assets.Scipts.Character
         [SerializeField] private AttackComponent attackComponent;
         [SerializeField] private ColliderComponent colliderComponent;
 
+        [SerializeField] private HealOnLowHealth healhtAbility;
+
+        //[SerializeField] private ResourceScriptableObject res;
         [ContextMenu("test")]
         private void test()
         {
-            ((IAttackComponent)attackComponent).ApplyDamage(healthComponent);
+            if(healhtAbility.CanUseAbility(healthComponent))
+            {
+                IEnumerator heal = healhtAbility.UseAbility(healthComponent);
+                StartCoroutine(heal);
+            }
+            //((IAttackComponent)attackComponent).ApplyDamage(healthComponent);
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {
