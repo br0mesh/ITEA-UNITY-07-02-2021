@@ -14,17 +14,27 @@ namespace Assets.Scipts.Components
             {
                 return health;
             }
-            private set
+            set
             {
                 health = value;
             }
         }
 
         [SerializeField] private bool isDead;
-        public bool IsDead { get => isDead; }
+        public bool IsDead
+        {
+            get => isDead;
+            set => isDead = value;
+        }
 
-        public Action<int> OnHealthChanged { get; }
-        public Action OnDead { get; }
+        public Action<int> OnHealthChanged
+        {
+            get;
+        }
+        public Action OnDead
+        {
+            get;
+        }
 
         public void ProcessDamage(AttackComponent attackComponent)
         {
@@ -35,6 +45,7 @@ namespace Assets.Scipts.Components
                 isDead = true;
                 health = 0;
                 OnDead?.Invoke();
+                Destroy(gameObject);
             }
 
             OnHealthChanged?.Invoke(health);

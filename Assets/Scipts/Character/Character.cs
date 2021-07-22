@@ -17,6 +17,7 @@ namespace Assets.Scipts.Character
 
         [SerializeField] private HealthComponent healthComponent;
         [SerializeField] private AttackComponent attackComponent;
+        [SerializeField] private AttackComponent2 attackComponent2;
         [SerializeField] private ColliderComponent colliderComponent;
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -57,6 +58,15 @@ namespace Assets.Scipts.Character
                     attackComponent.ApplyDamage(a[i]);
                 }
             }
+
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                var a = GetAllHealthComponent(colliderComponent.CollidersInRadius.ToArray());
+                for (int i = 0; i < a.Length; i++)
+                {
+                    attackComponent2.ApplyDamage(a[i]);
+                }
+            }
         }
         public void BuildBuilding()
         {
@@ -71,15 +81,15 @@ namespace Assets.Scipts.Character
             //buildingPlace.Build();
         }
 
-        private HealthComponent[] GetAllHealthComponent(Collider2D[] colliders)
+        private HealthComponent2[] GetAllHealthComponent(Collider2D[] colliders)
         {
-            List<HealthComponent> healthComponents = new List<HealthComponent>();
+            List<HealthComponent2> healthComponents = new List<HealthComponent2>();
             for (int i = 0; i < colliders.Length; i++)
             {
                 Component component;
-                if (colliders[i].gameObject.TryGetComponent(typeof(HealthComponent), out component))
+                if (colliders[i].gameObject.TryGetComponent(typeof(HealthComponent2), out component))
                 {
-                    healthComponents.Add((HealthComponent)component);
+                    healthComponents.Add((HealthComponent2)component);
                 }
             }
             return healthComponents.ToArray();
