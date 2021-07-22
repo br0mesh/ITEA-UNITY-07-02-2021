@@ -52,13 +52,20 @@ public class Graph : ScriptableObject
             Graph graph = Graph.Create("NewGraph");
 
             // Create nodes.
-            Node nodeA = Node.Create<Node>("NodeA");
-            SpriteNode nodeB = Node.Create<SpriteNode>("NodeB");
+            ActiveNode nodeA = Node.Create<ActiveNode>("NodeA");
+            ActiveNode nodeB = Node.Create<ActiveNode>("NodeB");
+            PassiveNode nodeC = Node.Create<PassiveNode>("NodeC");
+            PassiveNode nodeD = Node.Create<PassiveNode>("NodeD");
             nodeA.Neighbors.Add(nodeB);
+            nodeC.Neighbors.Add(nodeB);
+            nodeD.Neighbors.Add(nodeA);
+            nodeD.Neighbors.Add(nodeC);
 
             // Add nodes to graph.
             graph.AddNode(nodeA);
             graph.AddNode(nodeB);
+            graph.AddNode(nodeC);
+            graph.AddNode(nodeD);
         }
         [MenuItem("Window/Graph Serialization Example/Update Graph")]
         public static void UpdateGraph()

@@ -1,3 +1,4 @@
+using Assets.Scipts.SkillTree.SkillPowerUp;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,6 +8,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GraphNode", menuName = "ScriptableObjects/Graph")]
 public class Node : ScriptableObject
 {
+
+    public int neededLevel;
+
+    public bool doneAdditionalRequirements;
+
+    
+    
+
+    [SerializeField] private CharacterStats characterStats; 
+
     [SerializeField]
     private List<Node> neighbors;
     public List<Node> Neighbors
@@ -25,7 +36,7 @@ public class Node : ScriptableObject
 where T : Node
     {
         T node = CreateInstance<T>();
-
+        
         string path = string.Format("Assets/{0}.asset", name);
         AssetDatabase.CreateAsset(node, path);
 
@@ -46,6 +57,12 @@ where T : Node
 
         for (int i = 0; i < neighbors.Count; i++)
         {
+            
+            if (doneAdditionalRequirements == false /*|| neededLevel>=characterStats.CharacterLevel*/)
+            {
+                state = SkillPointState.RequiredtSmth;
+            }
+
             if (neighbors[i].State != SkillPointState.Learned)
             {
                 state = SkillPointState.Closed;
@@ -57,5 +74,5 @@ where T : Node
 [Serializable]
 public enum SkillPointState
 {
-    Closed, Opened, Learned
+    Closed, Opened, Learned, RequiredtSmth
 }

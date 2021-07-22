@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Scipts.SkillTree.SkillPowerUp
 {
+    public Node skillNode;
     public interface IAbility
     {
         bool CanUseAbility();
@@ -19,4 +20,5 @@ namespace Assets.Scipts.SkillTree.SkillPowerUp
 
         bool CanUseAbility(HealthComponent healthComponent);
     }
+
 }
