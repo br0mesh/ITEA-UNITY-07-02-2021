@@ -11,7 +11,7 @@ public class BaseBuilding : MonoBehaviour
     public bool IsBuilded { get => isBuilded; }
 
     [SerializeField] private int price;
-    public int Price { get=> price; }
+    public int Price { get=> price; set { price = value; } }
     public void Init()
     {
 

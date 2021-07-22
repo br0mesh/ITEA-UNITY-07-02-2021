@@ -14,11 +14,13 @@ namespace Assets.Scipts.Components
             {
                 return health;
             }
-            private set
+            set
             {
                 health = value;
             }
         }
+
+
 
         [SerializeField] private bool isDead;
         public bool IsDead { get => isDead; }
