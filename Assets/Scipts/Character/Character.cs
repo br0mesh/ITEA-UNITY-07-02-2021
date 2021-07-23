@@ -66,14 +66,28 @@ namespace Assets.Scipts.Character
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                var a = GetAllHealthComponent(colliderComponent.CollidersInRadius.ToArray());
-
-                for (int i = 0; i < a.Length; i++)
+                MakeAttack();
+            }
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                var a = GetComponent<SkillTreeCharacter>();
+                if(a.graph.Nodes[0].State == SkillPointState.Learned)
                 {
-                    attackComponent.ApplyDamage(a[i]);
+                    GetComponentInChildren<SuperAttack>().UseAbility(this);
                 }
             }
         }
+
+        public void MakeAttack()
+        {
+            var a = GetAllHealthComponent(colliderComponent.CollidersInRadius.ToArray());
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                attackComponent.ApplyDamage(a[i]);
+            }
+        }
+
         public void BuildBuilding()
         {
             var  wood =ResourceManager.Instance.GetResource(ResourceType.wood);

@@ -52,10 +52,10 @@ public class Graph : ScriptableObject
             Graph graph = Graph.Create("NewGraph");
 
             // Create nodes.
-            ActiveNode nodeA = Node.Create<ActiveNode>("NodeA");
-            ActiveNode nodeB = Node.Create<ActiveNode>("NodeB");
-            PassiveNode nodeC = Node.Create<PassiveNode>("NodeC");
-            PassiveNode nodeD = Node.Create<PassiveNode>("NodeD");
+            ActiveNode nodeA = Node.Create<ActiveNode>("SuperAttack");
+            ActiveNode nodeB = Node.Create<ActiveNode>("Useless Skill");
+            PassiveNode nodeC = Node.Create<PassiveNode>("SpeedPowerUp");
+            ActiveNode nodeD = Node.Create<ActiveNode>("HealOnLowHealth");
             nodeA.Neighbors.Add(nodeB);
             nodeC.Neighbors.Add(nodeB);
             nodeD.Neighbors.Add(nodeA);

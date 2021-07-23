@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Scipts.SkillTree.SkillPowerUp
 {
-    public Node skillNode;
+    //public Node skillNode;
     public interface IAbility
     {
         bool CanUseAbility();

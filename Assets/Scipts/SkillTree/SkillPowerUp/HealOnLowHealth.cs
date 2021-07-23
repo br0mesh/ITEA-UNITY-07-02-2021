@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "HealthAbility", menuName = "ScriptableObjects/Ability/Health", order = 1)]
-public class HealOnLowHealth : ScriptableObject, IHealhtAbility
+public class HealOnLowHealth : MonoBehaviour, IHealhtAbility
 {
     [SerializeField] private int startHealth;
     [SerializeField] private int healAmount;
