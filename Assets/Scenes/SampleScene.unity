@@ -416,6 +416,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &598203405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 598203406}
+  m_Layer: 0
+  m_Name: BuildingPlaceNew
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &598203406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598203405}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.47, y: 0.006, z: -0.5961317}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &693332718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -651,10 +681,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceManager: {fileID: 1146821555}
-  buildingPlace: {fileID: 0}
+  buildingPlace: {fileID: 1368803883}
+  cartspawn: {fileID: 11400000, guid: 59026c391fcd5c14bbf27ef905745243, type: 2}
+  firespawn: {fileID: 11400000, guid: bf3fb7b9c118b1c4080d3124ffce3e05, type: 2}
   healthComponent: {fileID: 848801971}
   attackComponent: {fileID: 848801970}
   colliderComponent: {fileID: 1949829565}
+  loc: {fileID: 598203406}
 --- !u!1 &965272224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5126507520524490402, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
@@ -836,12 +869,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76fce1cdb1c80b04ea58c1444d5a4314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money:
-    value: 0
-    data: {fileID: 11400000, guid: ca19c584209d9a9429f32fbb2ac67cbd, type: 2}
-  food:
-    value: 0
-    data: {fileID: 0}
+  resurces:
+  - type: 0
+    resource:
+      value: 0
+      data: {fileID: 0}
 --- !u!4 &1146821556
 Transform:
   m_ObjectHideFlags: 0
@@ -10593,7 +10625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1368803883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10956,6 +10988,10 @@ PrefabInstance:
     - target: {fileID: 3653952404342830208, guid: b0f6d1b862f102e468c29f3e0b464509, type: 3}
       propertyPath: m_Name
       value: Cart
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653952404342830208, guid: b0f6d1b862f102e468c29f3e0b464509, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5380530765647758340, guid: b0f6d1b862f102e468c29f3e0b464509, type: 3}
       propertyPath: m_RootOrder

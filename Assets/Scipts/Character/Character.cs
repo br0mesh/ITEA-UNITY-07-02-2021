@@ -14,10 +14,12 @@ namespace Assets.Scipts.Character
     {
         [SerializeField] private ResourceManager resourceManager;
         [SerializeField] private BuildingPlace buildingPlace;
-
+        [SerializeField] private BuildingScriptableObject cartspawn;
+        [SerializeField] private BuildingScriptableObject firespawn;
         [SerializeField] private HealthComponent healthComponent;
         [SerializeField] private AttackComponent attackComponent;
         [SerializeField] private ColliderComponent colliderComponent;
+        [SerializeField] private Transform loc;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -47,6 +49,14 @@ namespace Assets.Scipts.Character
                     BuildBuilding();
                 }
             }
+            if (Input.GetKeyDown(KeyCode.V))
+            {
+                firespawn.Spawn(loc);
+            }
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                cartspawn.Spawn(loc);
+            }
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
@@ -60,15 +70,9 @@ namespace Assets.Scipts.Character
         }
         public void BuildBuilding()
         {
-            //if (resourceManager.GetResource(re).Value < buildingPlace.GetUpgradePrice())
-            //{
-            //    Debug.LogError("Incorrect money amount");
-            //    return;
-            //}
+            
 
-            //resourceManager.Money.Value -= buildingPlace.GetUpgradePrice();
-
-            //buildingPlace.Build();
+            buildingPlace.Build();
         }
 
         private HealthComponent[] GetAllHealthComponent(Collider2D[] colliders)
