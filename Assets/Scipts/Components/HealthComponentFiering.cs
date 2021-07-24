@@ -27,13 +27,6 @@ namespace Assets.Scipts.Components
         public Action<int> OnHealthChanged { get; }
         public Action OnDead { get; }
 
-
-        private void Start()
-        {
-
-            //StartCoroutine(waiter());
-        }
-
         IEnumerator waiter()
         {
             allowDamage = false;

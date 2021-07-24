@@ -194,20 +194,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1616554251764624526, guid: 8299cbbd8fca92e449a13ed1f7f02760, type: 3}
   m_PrefabInstance: {fileID: 816103254}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &444889185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444889184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b7a409310c866b43aac25df1609964f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 20
-  isDead: 0
 --- !u!61 &444889187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -263,6 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 40
+  timeBetweenDamage: 5
   isDead: 0
 --- !u!4 &480899715 stripped
 Transform:
@@ -759,9 +746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 848801972}
   - component: {fileID: 848801971}
-  - component: {fileID: 848801970}
   - component: {fileID: 848801974}
-  - component: {fileID: 848801973}
   - component: {fileID: 848801975}
   m_Layer: 0
   m_Name: Character
@@ -770,19 +755,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &848801970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848801969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a1981d696f93e45bd4dbf9fe58d9f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
 --- !u!114 &848801971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -812,19 +784,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &848801973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848801969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fea4217e445619b4ebf0f32a32377c88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  energyLeak: 10
 --- !u!114 &848801974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -840,10 +799,9 @@ MonoBehaviour:
   resourceManager: {fileID: 1146821555}
   buildingPlace: {fileID: 0}
   healthComponent: {fileID: 848801971}
-  attackComponent: {fileID: 848801970}
-  energyLeak: {fileID: 848801973}
-  damage3: {fileID: 848801975}
-  fireHealth: {fileID: 0}
+  attackComponent: {fileID: 848801975}
+  energyLeak: {fileID: 848801975}
+  damageTemporary: {fileID: 848801975}
   colliderComponent: {fileID: 1949829565}
 --- !u!114 &848801975
 MonoBehaviour:
@@ -858,6 +816,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  energyLeak: 10
+  damageTemporary: 10
 --- !u!1 &965272224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5126507520524490402, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
@@ -11235,6 +11195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 40
+  timeBetweenDamage: 0
   isDead: 0
 --- !u!61 &1847303918
 BoxCollider2D:

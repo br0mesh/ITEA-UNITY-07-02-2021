@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace Assets.Scipts.Components
 {
-    public class AttackComponent3 : MonoBehaviour
+    public class AttackComponent3 : AttackComponent2
     {
-        [SerializeField] private int damage;
-        public int Damage { get => damage; }
+        [SerializeField] private int damageTemporary;
+        public int DamageTemporary { get => damageTemporary; }
 
         public Action<HealthComponentFiering> OnEnergyLeakDone;
-        public void ApplyEnergyLeak(HealthComponentFiering healthComponent)
+        public void ApplyTemporaryDamage(HealthComponentFiering healthComponent)
         {
             healthComponent.ProcessDamage(this);
 

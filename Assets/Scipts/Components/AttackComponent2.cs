@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Scipts.Components
 {
-    public class AttackComponent2 : MonoBehaviour
+    public class AttackComponent2 : AttackComponent
     {
         [SerializeField] private int energyLeak;
         public int EnergyLeak { get => energyLeak; }

@@ -18,7 +18,7 @@ namespace Assets.Scipts.Character
         [SerializeField] private HealthComponent healthComponent;
         [SerializeField] private AttackComponent attackComponent;
         [SerializeField] private AttackComponent2 energyLeak;
-        [SerializeField] private AttackComponent3 damage3;
+        [SerializeField] private AttackComponent3 damageTemporary;
         [SerializeField] private ColliderComponent colliderComponent;
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -59,8 +59,8 @@ namespace Assets.Scipts.Character
                 {
                     attackComponent.ApplyDamage(b[i]);
                     energyLeak.ApplyEnergyLeak(b[i]);
-                   
-                    damage3.ApplyEnergyLeak(a[i]);
+
+                    damageTemporary.ApplyTemporaryDamage(a[i]);
                 }
                
             }
