@@ -10,7 +10,7 @@ namespace Assets.Scipts.Components
     public class AttackComponent : MonoBehaviour, IAttackComponent
     {
         [SerializeField] private int damage;
-        public int Damage { get => damage; }
+        public int Damage { get => damage; set => damage = value; }
         public Action<HealthComponent> OnDamageDone { get; set; }
         public void ApplyDamage(HealthComponent healthComponent)
         {
