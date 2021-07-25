@@ -5,16 +5,21 @@ using UnityEngine;
 public class BaseBuilding : MonoBehaviour
 {
     [SerializeField] private BaseBuilding builingUpgradePrefab;
-    public BaseBuilding BuildingToUpgrade { get=> builingUpgradePrefab; }
+    public BaseBuilding BuildingToUpgrade
+    {
+        get => builingUpgradePrefab;
+    }
 
     private bool isBuilded;
-    public bool IsBuilded { get => isBuilded; }
+    public bool IsBuilded
+    {
+        get => isBuilded;
+    }
 
     [SerializeField] private int price;
-    public int Price { get=> price; }
-    public void Init()
+    public int Price
     {
-
+        get => price;
     }
 
     public void DestroyBuiling()

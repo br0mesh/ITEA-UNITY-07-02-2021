@@ -10,14 +10,8 @@ namespace Assets.Scipts.Components
         [SerializeField] private int health;
         public int Health
         {
-            get
-            {
-                return health;
-            }
-            private set
-            {
-                health = value;
-            }
+            get { return health; }
+            set { health = value; }
         }
 
         [SerializeField] private bool isDead;
