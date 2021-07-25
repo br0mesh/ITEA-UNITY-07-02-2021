@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "GraphNode", menuName = "ScriptableObjects/Graph")]
+[CreateAssetMenu(fileName = "GraphNode", menuName = "ScriptableObjects/Graph/GaphNode")]
 public class Node : ScriptableObject
 {
     [SerializeField]

@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69dc9e00ea4f31941926c95a49c390c0, type: 3}
-  m_Name: NewGraph
+  m_Script: {fileID: 11500000, guid: 6c70b88f74eda96428ecdcd030eeb55b, type: 3}
+  m_Name: HealAbilityLvl1
   m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 11400000, guid: b10faf2ad6e4f7340b63a5c2f908a8ce, type: 2}
-  - {fileID: 11400000, guid: b938eabb582ddf54e90ce2a6061aad6b, type: 2}
+  startHealth: 23
+  healAmount: 4
+  duration: 5
+  abilityData: {fileID: 11400000, guid: b6627c2d2322bd941a2e7b7fa367c384, type: 2}

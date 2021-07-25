@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69dc9e00ea4f31941926c95a49c390c0, type: 3}
-  m_Name: NewGraph
+  m_Script: {fileID: 11500000, guid: bc8aa7970a718b3469bf45477d2580ea, type: 3}
+  m_Name: AbilityData
   m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 11400000, guid: b10faf2ad6e4f7340b63a5c2f908a8ce, type: 2}
-  - {fileID: 11400000, guid: b938eabb582ddf54e90ce2a6061aad6b, type: 2}
+  sprite: {fileID: 21300000, guid: 11277a3f23988ec47908362d708edaa8, type: 3}
+  name: Heal
+  description: Heals the object

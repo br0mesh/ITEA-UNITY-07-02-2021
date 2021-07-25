@@ -5,13 +5,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "HealthAbility", menuName = "ScriptableObjects/Ability/Health", order = 1)]
+[CreateAssetMenu(fileName = "HealthAbility", menuName = "ScriptableObjects/Ability", order = 1)]
 public class HealOnLowHealth : ScriptableObject, IHealhtAbility
 {
     [SerializeField] private int startHealth;
     [SerializeField] private int healAmount;
     [SerializeField] private float duration;
-
+    [SerializeField] private BaseScriptableAbilityData abilityData;
     #region IHealthAbility
     public IEnumerator UseAbility(HealthComponent healthComponent)
     {

@@ -2,6 +2,7 @@
 using Assets.Scipts.Components;
 using Assets.Scipts.ResourceManage;
 using Assets.Scipts.Resources;
+using Assets.Scipts.SkillTree.Graph;
 using Assets.Scipts.SkillTree.SkillPowerUp;
 using System;
 using System.Collections;
@@ -24,6 +25,9 @@ namespace Assets.Scipts.Character
 
         [SerializeField] private HealOnLowHealth healhtAbility;
 
+        [SerializeField] private SkillPanelUI skillPanelUI;
+
+        [SerializeField] private AbilityNode[] abilityNodes;
         //[SerializeField] private ResourceScriptableObject res;
         [ContextMenu("test")]
         private void test()
@@ -34,6 +38,11 @@ namespace Assets.Scipts.Character
                 StartCoroutine(heal);
             }
             //((IAttackComponent)attackComponent).ApplyDamage(healthComponent);
+        }
+
+        private void Awake()
+        {
+            skillPanelUI.Init(abilityNodes);
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -72,6 +81,11 @@ namespace Assets.Scipts.Character
                 {
                     attackComponent.ApplyDamage(a[i]);
                 }
+            }
+
+            if(Input.GetKeyDown(KeyCode.O))
+            {
+                skillPanelUI.SetActive(!skillPanelUI.gameObject.activeSelf);
             }
         }
         public void BuildBuilding()
