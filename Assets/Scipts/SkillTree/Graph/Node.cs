@@ -52,6 +52,11 @@ where T : Node
             }
         }
     }
+
+    public void MakeLearned()
+    {
+        state = SkillPointState.Learned;
+    }
     #endregion //SkillTree
 }
 [Serializable]

@@ -1,8 +1,7 @@
 using Assets.Scipts.SkillTree.Graph;
-using Assets.Scipts.SkillTree.SkillPowerUp;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class SkillPanelUI : MonoBehaviour
 {
@@ -37,6 +36,21 @@ public class SkillPanelUI : MonoBehaviour
     }
     public void SetActive(bool value)
     {
+        UpdatePanelUI();
+
         skillUIHolder.gameObject.SetActive(value);
+    }
+
+    public void OnEnable()
+    {
+        SkillUIView.OnUpdateState += UpdatePanelUI;
+    }
+    private void UpdatePanelUI()
+    {
+        for (int i = 0; i < abilityDatas.Length; i++)
+        {
+            abilityDatas[i].UpdateState();
+            skillUIViews[i].Init(abilityDatas[i]);
+        }
     }
 }

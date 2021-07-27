@@ -43,6 +43,8 @@ public class Graph : ScriptableObject
             nodes[i].UpdateState();
         }
     }
+
+
     public static class CreateGraphExample
     {
         [MenuItem("Window/Graph Serialization Example/Create Graph")]
