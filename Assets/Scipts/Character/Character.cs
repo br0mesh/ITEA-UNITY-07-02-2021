@@ -1,5 +1,7 @@
 ﻿using Assets.Scipts.Building;
 using Assets.Scipts.Components;
+using Assets.Scipts.Components.InputComponents;
+using Assets.Scipts.Components.MovementComponents;
 using Assets.Scipts.ResourceManage;
 using Assets.Scipts.Resources;
 using Assets.Scipts.SkillTree.Graph;
@@ -22,13 +24,16 @@ namespace Assets.Scipts.Character
         [SerializeField] private HealthComponent healthComponent;
         [SerializeField] private AttackComponent attackComponent;
         [SerializeField] private ColliderComponent colliderComponent;
+        [SerializeField] private CharacterBaseInputComponent inputComponent;
+        [SerializeField] private MovementComponent movementComponent;
+        [SerializeField] private CharacterAnimatorComponent characterAnimatorComponent;
 
         [SerializeField] private HealOnLowHealth healhtAbility;
 
         [SerializeField] private SkillPanelUI skillPanelUI;
 
         [SerializeField] private AbilityNode[] abilityNodes;
-        //[SerializeField] private ResourceScriptableObject res;
+
         [ContextMenu("test")]
         private void test()
         {
@@ -37,13 +42,18 @@ namespace Assets.Scipts.Character
                 IEnumerator heal = healhtAbility.UseAbility(healthComponent);
                 StartCoroutine(heal);
             }
-            //((IAttackComponent)attackComponent).ApplyDamage(healthComponent);
         }
 
         private void Awake()
         {
-            skillPanelUI.Init(abilityNodes);
+            //skillPanelUI.Init(abilityNodes);
+
+            movementComponent.Init(transform);
+            inputComponent.OnCharacterMove += movementComponent.Move;
+            inputComponent.OnCharacterMove += characterAnimatorComponent.OnCharaterMove;
+            inputComponent.OnCharacterIdle += characterAnimatorComponent.OnCharacterIdle;
         }
+
         private void OnTriggerEnter2D(Collider2D collision)
         {
             var buildingPlace = collision.gameObject.GetComponent<BuildingPlace>();
