@@ -19,9 +19,7 @@ namespace Assets.Scipts.Components.MovementComponents
         }
         public void Move(float direction)
         {
-            // 0 1 0.1 == 0.1
-            // 0.6 -0.6 3 == -0.6
-            float velocity = Mathf.MoveTowards(transformToMove.position.x, transformToMove.position.x + (direction * speed), speed * Time.deltaTime);
+            float velocity = Mathf.MoveTowards(transformToMove.position.x, transformToMove.position.x + direction, speed * Time.deltaTime);
             transformToMove.position = new Vector2(velocity, transformToMove.position.y);
         }
     }

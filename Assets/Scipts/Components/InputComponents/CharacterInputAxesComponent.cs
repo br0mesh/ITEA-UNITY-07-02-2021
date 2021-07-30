@@ -13,9 +13,9 @@ namespace Assets.Scipts.Components.InputComponents
         void Update()
         {
             float moveInput = Input.GetAxisRaw("Horizontal");
-            moveInput *= Time.deltaTime;
+            //moveInput *= Time.deltaTime;
 
-            if (moveInput != 0)
+            if (moveInput != 0f)
             {
                 OnCharacterMove?.Invoke(moveInput);
             }

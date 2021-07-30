@@ -25,9 +25,9 @@ namespace Assets.Scipts.Components.InputComponents
                 moveInput = 1;
             }
 
-            moveInput *= Time.deltaTime;
+            //moveInput *= Time.deltaTime;
 
-            if(moveInput != 0)
+            if (moveInput != 0f)
             {
                 OnCharacterMove?.Invoke(moveInput);
             }
@@ -35,6 +35,7 @@ namespace Assets.Scipts.Components.InputComponents
             {
                 OnCharacterIdle?.Invoke();
             }
+                
         }
     }
 }

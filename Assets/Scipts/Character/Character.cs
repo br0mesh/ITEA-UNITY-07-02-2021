@@ -18,7 +18,6 @@ namespace Assets.Scipts.Character
 {
     public class Character : MonoBehaviour
     {
-       // [SerializeField] private ResourceManager resourceManager;
         [SerializeField] private BuildingPlace buildingPlace;
 
         [SerializeField] private HealthComponent healthComponent;
@@ -83,15 +82,15 @@ namespace Assets.Scipts.Character
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                var a = GetAllHealthComponent(colliderComponent.CollidersInRadius.ToArray());
+            //if (Input.GetKeyDown(KeyCode.Mouse0))
+            //{
+            //    var a = GetAllHealthComponent(colliderComponent.CollidersInRadius.ToArray());
 
-                for (int i = 0; i < a.Length; i++)
-                {
-                    attackComponent.ApplyDamage(a[i]);
-                }
-            }
+            //    for (int i = 0; i < a.Length; i++)
+            //    {
+            //        attackComponent.ApplyDamage(a[i]);
+            //    }
+            //}
 
             if(Input.GetKeyDown(KeyCode.O))
             {
