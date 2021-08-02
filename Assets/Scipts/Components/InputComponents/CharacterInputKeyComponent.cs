@@ -9,9 +9,6 @@ namespace Assets.Scipts.Components.InputComponents
 {
     public class CharacterInputKeyComponent : CharacterBaseInputComponent
     {
-        public override Action<float> OnCharacterMove { get; set; }
-        public override Action OnCharacterIdle { get; set; }
-
         void Update()
         {
             float moveInput = 0f;
@@ -25,8 +22,6 @@ namespace Assets.Scipts.Components.InputComponents
                 moveInput = 1;
             }
 
-            //moveInput *= Time.deltaTime;
-
             if (moveInput != 0f)
             {
                 OnCharacterMove?.Invoke(moveInput);
@@ -35,7 +30,20 @@ namespace Assets.Scipts.Components.InputComponents
             {
                 OnCharacterIdle?.Invoke();
             }
-                
+
+            if(Input.GetKey(KeyCode.Mouse0))
+            {
+                OnCharacterAttack?.Invoke();
+            }
+
+            if(Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                OnCharacterBlock?.Invoke(false);
+            }
+            else if (Input.GetKeyUp(KeyCode.Mouse1))
+            {
+                OnCharacterBlock?.Invoke(true);
+            }
         }
     }
 }

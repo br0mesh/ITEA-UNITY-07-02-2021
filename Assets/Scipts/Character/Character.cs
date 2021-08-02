@@ -18,97 +18,45 @@ namespace Assets.Scipts.Character
 {
     public class Character : MonoBehaviour
     {
-        [SerializeField] private BuildingPlace buildingPlace;
-
         [SerializeField] private HealthComponent healthComponent;
+        [SerializeField] private Collider2D healthCollider;
+
         [SerializeField] private AttackComponent attackComponent;
-        [SerializeField] private ColliderComponent colliderComponent;
+        [SerializeField] private ColliderComponent attackCollider;
+        [SerializeField] private BlockComponent blockComponent;
+
         [SerializeField] private CharacterBaseInputComponent inputComponent;
         [SerializeField] private MovementComponent movementComponent;
         [SerializeField] private CharacterAnimatorComponent characterAnimatorComponent;
 
-        [SerializeField] private HealOnLowHealth healhtAbility;
-
-        [SerializeField] private SkillPanelUI skillPanelUI;
-
-        [SerializeField] private AbilityNode[] abilityNodes;
-
-        [ContextMenu("test")]
-        private void test()
-        {
-            if(healhtAbility.CanUseAbility(healthComponent))
-            {
-                IEnumerator heal = healhtAbility.UseAbility(healthComponent);
-                StartCoroutine(heal);
-            }
-        }
 
         private void Awake()
         {
-            //skillPanelUI.Init(abilityNodes);
-
             movementComponent.Init(transform);
+            characterAnimatorComponent.Init(transform);
+            blockComponent.Init(healthCollider);
+
             inputComponent.OnCharacterMove += movementComponent.Move;
             inputComponent.OnCharacterMove += characterAnimatorComponent.OnCharaterMove;
-            inputComponent.OnCharacterIdle += characterAnimatorComponent.OnCharacterIdle;
+            inputComponent.OnCharacterAttack += characterAnimatorComponent.OnCharacterAttack;
+            inputComponent.OnCharacterBlock += blockComponent.Block;
+            characterAnimatorComponent.OnAttackExecuted += ExecuteAttack;
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnDestroy()
         {
-            var buildingPlace = collision.gameObject.GetComponent<BuildingPlace>();
-
-            if (buildingPlace != null)
-            {
-                this.buildingPlace = buildingPlace;
-            }
-        }
-        private void OnTriggerExit2D(Collider2D collision)
-        {
-            var buildingPlace = collision.gameObject.GetComponent<BuildingPlace>();
-
-            if (buildingPlace != null)
-            {
-                this.buildingPlace = null;
-            }
+            inputComponent.OnCharacterMove -= movementComponent.Move;
+            inputComponent.OnCharacterMove -= characterAnimatorComponent.OnCharaterMove;
+            inputComponent.OnCharacterAttack -= characterAnimatorComponent.OnCharacterAttack;
+            inputComponent.OnCharacterBlock -= blockComponent.Block;
+            inputComponent.OnCharacterAttack -= ExecuteAttack;
         }
 
-        private void Update()
+        private void ExecuteAttack()
         {
-            if (Input.GetKeyDown(KeyCode.B))
-            {
-                if (buildingPlace != null)
-                {
-                    BuildBuilding();
-                }
-            }
+            HealthComponent[] healthComponents = GetAllHealthComponent(attackCollider.CollidersInRadius.ToArray());
 
-            //if (Input.GetKeyDown(KeyCode.Mouse0))
-            //{
-            //    var a = GetAllHealthComponent(colliderComponent.CollidersInRadius.ToArray());
-
-            //    for (int i = 0; i < a.Length; i++)
-            //    {
-            //        attackComponent.ApplyDamage(a[i]);
-            //    }
-            //}
-
-            if(Input.GetKeyDown(KeyCode.O))
-            {
-                skillPanelUI.SetActive(!skillPanelUI.gameObject.activeSelf);
-            }
-        }
-        public void BuildBuilding()
-        {
-            var  wood =ResourceManager.Instance.GetResource(ResourceType.wood);
-            //if (resourceManager.GetResource(re).Value < buildingPlace.GetUpgradePrice())
-            //{
-            //    Debug.LogError("Incorrect money amount");
-            //    return;
-            //}
-
-            //resourceManager.Money.Value -= buildingPlace.GetUpgradePrice();
-
-            //buildingPlace.Build();
+            attackComponent.ApplyDamage(healthComponents);
         }
 
         private HealthComponent[] GetAllHealthComponent(Collider2D[] colliders)

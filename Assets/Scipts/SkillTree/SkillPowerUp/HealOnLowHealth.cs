@@ -2,7 +2,6 @@ using Assets.Scipts.Components;
 using Assets.Scipts.SkillTree.SkillPowerUp;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "HealthAbility", menuName = "ScriptableObjects/Ability", order = 1)]
@@ -39,6 +38,10 @@ public class HealOnLowHealth : ScriptableObject, IHealhtAbility
     public int Damage => -healAmount;
     public Action<HealthComponent> OnDamageDone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     public void ApplyDamage(HealthComponent healthComponent)
+    {
+
+    }
+    public void ApplyDamage(HealthComponent[] healthComponents)
     {
 
     }

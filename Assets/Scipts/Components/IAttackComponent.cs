@@ -8,8 +8,9 @@ namespace Assets.Scipts.Components
 {
     public interface IAttackComponent
     {
-        public int Damage{ get; }
-        public Action<HealthComponent> OnDamageDone { get; set; }
-        public void ApplyDamage(HealthComponent healthComponent);
+        int Damage{ get; }
+        Action<HealthComponent> OnDamageDone { get; set; }
+        void ApplyDamage(HealthComponent healthComponent);
+        void ApplyDamage(HealthComponent[] healthComponents);
     }
 }

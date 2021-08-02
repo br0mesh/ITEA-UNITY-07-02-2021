@@ -7,9 +7,6 @@ namespace Assets.Scipts.Components.InputComponents
 {
     public class CharacterInputAxesComponent : CharacterBaseInputComponent
     {
-        public override Action<float> OnCharacterMove { get; set; }
-        public override Action OnCharacterIdle { get; set; }
-
         void Update()
         {
             float moveInput = Input.GetAxisRaw("Horizontal");

@@ -19,5 +19,12 @@ namespace Assets.Scipts.Components
 
             OnDamageDone?.Invoke(healthComponent);
         }
+        public void ApplyDamage(HealthComponent[] healthComponents)
+        {
+            for (int i = 0; i < healthComponents.Length; i++)
+            {
+                healthComponents[i].ProcessDamage(this);
+            }
+        }
     }
 }

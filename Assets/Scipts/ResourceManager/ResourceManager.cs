@@ -18,7 +18,7 @@ namespace Assets.Scipts.ResourceManage
         }
         public void AddResource(ResourceType type, int value)
         {
-            ResourceContainer resource = resurces.Find((resource) => resource.type == type);
+            ResourceContainer resource = resurces.Find((r) => r.type == type);
 
             if (resource != null)
             {
