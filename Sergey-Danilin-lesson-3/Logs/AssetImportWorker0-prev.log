@@ -1,0 +1,1173 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1110; Version 2009; 64bit' Language: 'ru' Physical Memory: 7993 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Programming\UnityProject\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/HP/Documents/GitHub/ITEA-UNITY-07-02-2021/Sergey-Danilin-lesson-3
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49694
+Successfully changed project path to: C:/Users/HP/Documents/GitHub/ITEA-UNITY-07-02-2021/Sergey-Danilin-lesson-3
+C:/Users/HP/Documents/GitHub/ITEA-UNITY-07-02-2021/Sergey-Danilin-lesson-3
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 50.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Programming/UnityProject/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/HP/Documents/GitHub/ITEA-UNITY-07-02-2021/Sergey-Danilin-lesson-3/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   27.21.14.6280
+Initialize mono
+Mono path[0] = 'C:/Programming/UnityProject/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Programming/UnityProject/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Programming/UnityProject/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Programming/UnityProject/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008044 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 47.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.725 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.056695 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.112 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1415 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.4 MB.
+System memory in use after: 67.5 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1849.
+Total: 4.203900 ms (FindLiveObjects: 0.267900 ms CreateObjectMapping: 0.117200 ms MarkObjects: 3.710600 ms  DeleteObjects: 0.106300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08baa22ed376f4922e73d7f081f6f8d') in 0.019379 seconds
+  Import took 0.022518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(b03f16b3f59252a46a37029865a33062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(b03f16b3f59252a46a37029865a33062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e285c220a0f8522d44e9596032da0367') in 0.003111 seconds
+  Import took 0.006313 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009824 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.368 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.0 MB.
+System memory in use after: 66.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1852.
+Total: 2.193600 ms (FindLiveObjects: 0.217700 ms CreateObjectMapping: 0.047600 ms MarkObjects: 1.887100 ms  DeleteObjects: 0.040200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 164.056866 seconds.
+  path: Assets/Scipts
+  artifactKey: Guid(fe7f19a5873f7fb46ac25a88823ca837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts using Guid(fe7f19a5873f7fb46ac25a88823ca837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3167edc15017a3e56e8f88ce1f47c400') in 0.008778 seconds
+  Import took 0.013857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.157747 seconds.
+  path: Assets/Scipts/Components
+  artifactKey: Guid(264d32b23fd98cf4fa5ecc67f1e4c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/Components using Guid(264d32b23fd98cf4fa5ecc67f1e4c612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1551d3197240ebd7571ca98970abd8cb') in 0.002359 seconds
+  Import took 0.036490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.302744 seconds.
+  path: Assets/ThirdPartyAssets/Bandits - Pixel Art/Sprites/LightBandit.png
+  artifactKey: Guid(f2ed27d6c1c3ccc48959bcca269d88f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Bandits - Pixel Art/Sprites/LightBandit.png using Guid(f2ed27d6c1c3ccc48959bcca269d88f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfaa2b684e05f0ae3bf44d370374e58b') in 0.307824 seconds
+  Import took 0.310891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000485 seconds.
+  path: Assets/ThirdPartyAssets/Bandits - Pixel Art/Sprites/LightBandit.png
+  artifactKey: Guid(f2ed27d6c1c3ccc48959bcca269d88f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Bandits - Pixel Art/Sprites/LightBandit.png using Guid(f2ed27d6c1c3ccc48959bcca269d88f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfaa2b684e05f0ae3bf44d370374e58b') in 0.099865 seconds
+  Import took 0.104350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.629603 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(d46f4f5fb61cd264d8d64c3f0e3c1caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(d46f4f5fb61cd264d8d64c3f0e3c1caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a197c52c6002263c7ab5351c371156') in 0.002654 seconds
+  Import took 0.027631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.287425 seconds.
+  path: Assets/Prefabs/Billboard.prefab
+  artifactKey: Guid(8c2cfa201c367484ca9be795fb7cda33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Billboard.prefab using Guid(8c2cfa201c367484ca9be795fb7cda33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4670357d0d46f233ced358f96e73c342') in 0.080563 seconds
+  Import took 0.085763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Prefabs/DryingRope.prefab
+  artifactKey: Guid(f8cc00e466ad08b48b047fe17033254f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DryingRope.prefab using Guid(f8cc00e466ad08b48b047fe17033254f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638a4659d34961177ccdf17e04cc76c3') in 0.023134 seconds
+  Import took 0.026528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Prefabs/Forge.prefab
+  artifactKey: Guid(5aa0418beb8107c4b9e48037aed5d91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forge.prefab using Guid(5aa0418beb8107c4b9e48037aed5d91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c46d23c95c5af26e612b981cbf260f') in 0.013872 seconds
+  Import took 0.017159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Prefabs/GroundTile.prefab
+  artifactKey: Guid(d553d749aabaf4b45b2cdbde90cbc3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GroundTile.prefab using Guid(d553d749aabaf4b45b2cdbde90cbc3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e02875e877891bee16528c54cbd034') in 0.025136 seconds
+  Import took 0.032637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Prefabs/Shop.prefab
+  artifactKey: Guid(7c7cf1567b6cf1c40a1facd8c85b1b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shop.prefab using Guid(7c7cf1567b6cf1c40a1facd8c85b1b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58290c1914674999d5f6ab95f5144d37') in 0.017889 seconds
+  Import took 0.022768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/Prefabs/Field.prefab
+  artifactKey: Guid(cf8cb624519a35e4eaca74da2014d0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Field.prefab using Guid(cf8cb624519a35e4eaca74da2014d0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9b04ccf4c1bdda5f3097698bb9c536') in 0.022082 seconds
+  Import took 0.026241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Assets/Prefabs/TX Village Props Campfire.prefab
+  artifactKey: Guid(404f6ca73658dec448977150112523af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TX Village Props Campfire.prefab using Guid(404f6ca73658dec448977150112523af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308f179619a78b03f2be883df236fd41') in 0.042981 seconds
+  Import took 0.049300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/Prefabs/Fence 1.prefab
+  artifactKey: Guid(fe34c2f5a4a67204f99abba247e31386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fence 1.prefab using Guid(fe34c2f5a4a67204f99abba247e31386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18ec3475766369c69589bcbc0c12d295') in 0.023485 seconds
+  Import took 0.027196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/Prefabs/Cart.prefab
+  artifactKey: Guid(b0f6d1b862f102e468c29f3e0b464509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cart.prefab using Guid(b0f6d1b862f102e468c29f3e0b464509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0360add32e943ba334eabe397af14e9') in 0.022943 seconds
+  Import took 0.030114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Prefabs/Table.prefab
+  artifactKey: Guid(59b103bf5aaa4d74da7c66122eb7bbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Table.prefab using Guid(59b103bf5aaa4d74da7c66122eb7bbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441316345b679f6fc7f9f454c684c1ca') in 0.024487 seconds
+  Import took 0.030234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Prefabs/BUilding
+  artifactKey: Guid(68cc92ac4b52ce44284480bb2350a1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding using Guid(68cc92ac4b52ce44284480bb2350a1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0f0fe168f9bd96450cbcdc130d087c') in 0.005174 seconds
+  Import took 0.009915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001149 seconds.
+  path: Assets/Prefabs/Fence.prefab
+  artifactKey: Guid(123aa43d2ba40aa4ca78850a20bc23d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fence.prefab using Guid(123aa43d2ba40aa4ca78850a20bc23d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4000c658433cc9457ff73488973c186') in 0.025268 seconds
+  Import took 0.034145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001457 seconds.
+  path: Assets/Prefabs/WeaponRack.prefab
+  artifactKey: Guid(8299cbbd8fca92e449a13ed1f7f02760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WeaponRack.prefab using Guid(8299cbbd8fca92e449a13ed1f7f02760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4406806ea0131ad4a60e3c98122128') in 0.022772 seconds
+  Import took 0.029467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Prefabs/MapGenerator.prefab
+  artifactKey: Guid(dbd59b5eb9eec2b4290f7530d725f83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/MapGenerator.prefab using Guid(dbd59b5eb9eec2b4290f7530d725f83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29823f1a64aaf6b83f9735a6c78309e') in 0.047639 seconds
+  Import took 0.057334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.157188 seconds.
+  path: Assets/Prefabs/BUilding/Fire-lvl2.prefab
+  artifactKey: Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire-lvl2.prefab using Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051e4296c8a62c2ecc3e12d9f08d417a') in 0.013919 seconds
+  Import took 0.017300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000489 seconds.
+  path: Assets/Prefabs/BUilding/Fire.prefab
+  artifactKey: Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire.prefab using Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db00a9a732baa96cd42b382d6c31976') in 0.016105 seconds
+  Import took 0.019420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.649972 seconds.
+  path: Assets/ThirdPartyAssets
+  artifactKey: Guid(aa33738cd12bf0c418d22938fa91e8fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets using Guid(aa33738cd12bf0c418d22938fa91e8fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c9df85393cf9cf59172ab4d6c36a8f') in 0.003403 seconds
+  Import took 0.006183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.207655 seconds.
+  path: Assets/ThirdPartyAssets/Cainos
+  artifactKey: Guid(50fe193673634d74b961abcab7a0408a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Cainos using Guid(50fe193673634d74b961abcab7a0408a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee4055c63a789ce9ba1038bff83657e') in 0.004772 seconds
+  Import took 0.023794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.693866 seconds.
+  path: Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props
+  artifactKey: Guid(1f08d781702466b438d35aa7938d8030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props using Guid(1f08d781702466b438d35aa7938d8030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d0ee06777279a5df54c5441e1b0263') in 0.002708 seconds
+  Import took 0.038805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.538614 seconds.
+  path: Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Scene
+  artifactKey: Guid(3e5bc175231773446846774743597c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Scene using Guid(3e5bc175231773446846774743597c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac6268745c63c31f7dd257fa1aec85e') in 0.003245 seconds
+  Import took 0.008405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.423757 seconds.
+  path: Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Scene/SC Demo Scene - Village Props.unity
+  artifactKey: Guid(104b0d14871d44f4881963af94f49350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Scene/SC Demo Scene - Village Props.unity using Guid(104b0d14871d44f4881963af94f49350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a4f55a918557aa6a0123ca790ec34f') in 0.034452 seconds
+  Import took 0.039693 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009539 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.613 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.3 MB.
+System memory in use after: 69.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1867.
+Total: 5.899800 ms (FindLiveObjects: 0.164700 ms CreateObjectMapping: 0.047400 ms MarkObjects: 5.635200 ms  DeleteObjects: 0.050900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.942337 seconds.
+  path: Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Background Grid.png
+  artifactKey: Guid(4525736a9d0538940bce8f13f1227b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Background Grid.png using Guid(4525736a9d0538940bce8f13f1227b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1aaab7f95a0000806e822685e4045af') in 0.075656 seconds
+  Import took 0.079756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006313 seconds.
+  path: Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Background Grid.png
+  artifactKey: Guid(4525736a9d0538940bce8f13f1227b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Background Grid.png using Guid(4525736a9d0538940bce8f13f1227b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1aaab7f95a0000806e822685e4045af') in 0.013950 seconds
+  Import took 0.018157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.749705 seconds.
+  path: Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Village Props.png
+  artifactKey: Guid(7810966f0f690954c87305933cabf2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Village Props.png using Guid(7810966f0f690954c87305933cabf2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb07392f339eaee4c786e21a32bcbe4a') in 0.575686 seconds
+  Import took 0.599692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.161623 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e846406f82ebe2f81d775d2fa7ec11b') in 0.050652 seconds
+  Import took 0.056736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.625070 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad061918a298932138c90bd73fadc2c') in 0.013559 seconds
+  Import took 0.016503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.156297 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6becab7391941b3edebf7ed31d1540') in 0.013483 seconds
+  Import took 0.018967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.909033 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49c76c3ec31bf43dfea0d405568dac4') in 0.015714 seconds
+  Import took 0.019291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.252368 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221c23190892d35a15be61ca22b42b69') in 0.003518 seconds
+  Import took 0.009311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.805166 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa825cc19babc5ad99464c5a9b29509') in 0.020245 seconds
+  Import took 0.026114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.804074 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b148a3911953f587b946114aa65d869') in 0.018379 seconds
+  Import took 0.022681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.351608 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d0afffab9a7918112deb3f08875f45') in 0.012904 seconds
+  Import took 0.016845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.258603 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1adcf177bbfa41348b0dab8c317137dc') in 0.020919 seconds
+  Import took 0.026601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.036502 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c431759813800e0da14b89591b80e6d') in 0.013448 seconds
+  Import took 0.019184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.980176 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '486658cfce40bc2121ccb1b3e7404b8a') in 0.013837 seconds
+  Import took 0.019280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.501013 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f90356421becff65da20a0ff7438afb9') in 0.010902 seconds
+  Import took 0.015228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.200256 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1738650e24869d37d02ba6af98e61ce') in 0.013245 seconds
+  Import took 0.019649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.528478 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ce6652868328e244bb080accb0b3e2') in 0.016109 seconds
+  Import took 0.020126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.460275 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5be7acea78fc8b90e6640c392aa295d9') in 0.012207 seconds
+  Import took 0.017582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.024627 seconds.
+  path: Assets/Prefabs/BUilding/Fire-lvl2.prefab
+  artifactKey: Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire-lvl2.prefab using Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7069d97de2832ecec3e3b24230aa7c07') in 0.015013 seconds
+  Import took 0.018631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.688293 seconds.
+  path: Assets/Prefabs/BUilding/Fire-lvl2.prefab
+  artifactKey: Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire-lvl2.prefab using Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aabfb4019169bc2d0cb00df9d606378') in 0.013279 seconds
+  Import took 0.016900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.033962 seconds.
+  path: Assets/Prefabs/BUilding/Fire.prefab
+  artifactKey: Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire.prefab using Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da2586d1366645075d18523dd98fea5') in 0.039485 seconds
+  Import took 0.043748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.504264 seconds.
+  path: Assets/Prefabs/BUilding/Fire.prefab
+  artifactKey: Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire.prefab using Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c61015d7504c7228a37091d80263489d') in 0.019386 seconds
+  Import took 0.024719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.528730 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583e9d4de24f13509088808fb4ce5f60') in 0.011725 seconds
+  Import took 0.017060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026422 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583e9d4de24f13509088808fb4ce5f60') in 0.013432 seconds
+  Import took 0.019025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.042832 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f5b6f65364a7eb0a71348829c807ce') in 0.015169 seconds
+  Import took 0.019562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.507998 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3392b1d6f6470a4499e7c5b74147582a') in 0.011057 seconds
+  Import took 0.014730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.458314 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '914291fd9bab8351f724d154cbeff52e') in 0.015415 seconds
+  Import took 0.019467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.464236 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30d589f29a69d6c93e9087e07eb79be') in 0.012369 seconds
+  Import took 0.022887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.548075 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98520233c3ee7db094728df5b83569e3') in 0.021190 seconds
+  Import took 0.026561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.934578 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640021c9dc40b67d182175b0bfa0f102') in 0.011680 seconds
+  Import took 0.016323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.478760 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b222efed93c05fea3df681681bdfd2') in 0.016343 seconds
+  Import took 0.024687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.816009 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3e2cc7b14f98c384a9cb892cba9ef1') in 0.014464 seconds
+  Import took 0.018730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011190 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3e2cc7b14f98c384a9cb892cba9ef1') in 0.011350 seconds
+  Import took 0.014352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.112290 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff12f184d7f18730a3216a1ae5a51434') in 0.013441 seconds
+  Import took 0.019996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.785278 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e222a5c6919f6e4ba2404bf68a6e6e') in 0.010624 seconds
+  Import took 0.015314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.908118 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a858644e9070351da998bb996b712355') in 0.014049 seconds
+  Import took 0.019658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.950145 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33c2917f6fda973de4eeb88e851379b') in 0.092125 seconds
+  Import took 0.099063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.521851 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef1909e44a05d073028d2cb5d014d99') in 0.010346 seconds
+  Import took 0.014347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027649 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef1909e44a05d073028d2cb5d014d99') in 0.012937 seconds
+  Import took 0.017256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.336780 seconds.
+  path: Assets/Prefabs/BUilding/Fire.prefab
+  artifactKey: Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire.prefab using Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371c0bf09616b5bbea763edde709b207') in 0.032360 seconds
+  Import took 0.041092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.929334 seconds.
+  path: Assets/Prefabs/BUilding/Fire-lvl2.prefab
+  artifactKey: Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire-lvl2.prefab using Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd57d50b788ed8ca8a650ac52af845d0') in 0.014103 seconds
+  Import took 0.017989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.526614 seconds.
+  path: Assets/ThirdPartyAssets/Prototype Hero Demo - Pixel Art/Sprites/Background.png
+  artifactKey: Guid(d9c5f41937dce6a4aaea431fd404415b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Prototype Hero Demo - Pixel Art/Sprites/Background.png using Guid(d9c5f41937dce6a4aaea431fd404415b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab45014b313b173f182f0ade840da29') in 0.044495 seconds
+  Import took 0.053395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011092 seconds.
+  path: Assets/ThirdPartyAssets/Prototype Hero Demo - Pixel Art/Sprites/Background.png
+  artifactKey: Guid(d9c5f41937dce6a4aaea431fd404415b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Prototype Hero Demo - Pixel Art/Sprites/Background.png using Guid(d9c5f41937dce6a4aaea431fd404415b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab45014b313b173f182f0ade840da29') in 0.013397 seconds
+  Import took 0.018976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.923455 seconds.
+  path: Assets/ThirdPartyAssets/Prototype Hero Demo - Pixel Art/Sprites/PrototypeHero.png
+  artifactKey: Guid(300ea1a5869382b43bf6149aba92c4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Prototype Hero Demo - Pixel Art/Sprites/PrototypeHero.png using Guid(300ea1a5869382b43bf6149aba92c4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb94f0763b4533062b8f46e515d7df83') in 0.100749 seconds
+  Import took 0.104309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014376 seconds.
+  path: Assets/ThirdPartyAssets/Prototype Hero Demo - Pixel Art/Sprites/PrototypeHero.png
+  artifactKey: Guid(300ea1a5869382b43bf6149aba92c4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThirdPartyAssets/Prototype Hero Demo - Pixel Art/Sprites/PrototypeHero.png using Guid(300ea1a5869382b43bf6149aba92c4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb94f0763b4533062b8f46e515d7df83') in 0.090257 seconds
+  Import took 0.093465 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013857 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.514 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.8 MB.
+System memory in use after: 70.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2114.
+Total: 3.653300 ms (FindLiveObjects: 0.252300 ms CreateObjectMapping: 0.095700 ms MarkObjects: 3.205600 ms  DeleteObjects: 0.098300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.450943 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b85f58c7846320c5acc5c0154beccae') in 0.084229 seconds
+  Import took 0.099564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.912756 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9645cf3a551a9c3bd57890324887ff') in 0.015985 seconds
+  Import took 0.019806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.581803 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd45ed2018a8e2ae8a0af9eadd3b4a7') in 0.015562 seconds
+  Import took 0.019662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.214692 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da9f719f44ff3e0a02f2fe74a4e5003') in 0.013674 seconds
+  Import took 0.017467 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015316 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.981 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.9 MB.
+System memory in use after: 70.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2118.
+Total: 3.144000 ms (FindLiveObjects: 0.259100 ms CreateObjectMapping: 0.100500 ms MarkObjects: 2.758800 ms  DeleteObjects: 0.023800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 290.961243 seconds.
+  path: Assets/Scipts/CameraMovement
+  artifactKey: Guid(6137c3bb0e0fa9a46b419fd78687d204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/CameraMovement using Guid(6137c3bb0e0fa9a46b419fd78687d204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2571cf2edc42222aaf2dca86f846416') in 0.011593 seconds
+  Import took 0.015456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.809034 seconds.
+  path: Assets/Scipts/CameraMovement/CameraMovement.cs
+  artifactKey: Guid(c6076040e9ccf4a4883c5eb2b804068d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scipts/CameraMovement/CameraMovement.cs using Guid(c6076040e9ccf4a4883c5eb2b804068d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebfe095b71920388764b96428fe0862') in 0.266215 seconds
+  Import took 0.276389 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007395 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.377 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.9 MB.
+System memory in use after: 70.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2121.
+Total: 2.671300 ms (FindLiveObjects: 0.202000 ms CreateObjectMapping: 0.081000 ms MarkObjects: 2.367800 ms  DeleteObjects: 0.019300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 132.914300 seconds.
+  path: Assets/Sprites/SnowyMountains.png
+  artifactKey: Guid(6cbc1fb6a3807974a8e4296faeeba30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/SnowyMountains.png using Guid(6cbc1fb6a3807974a8e4296faeeba30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c03f8ebd05256017efa9f5f829d4f6b') in 0.145818 seconds
+  Import took 0.149406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002428 seconds.
+  path: Assets/Sprites/SnowyMountains.png
+  artifactKey: Guid(6cbc1fb6a3807974a8e4296faeeba30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/SnowyMountains.png using Guid(6cbc1fb6a3807974a8e4296faeeba30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c03f8ebd05256017efa9f5f829d4f6b') in 0.034293 seconds
+  Import took 0.037178 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014429 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.364 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.9 MB.
+System memory in use after: 70.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2127.
+Total: 2.580000 ms (FindLiveObjects: 0.214600 ms CreateObjectMapping: 0.045100 ms MarkObjects: 2.298200 ms  DeleteObjects: 0.020400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.443742 seconds.
+  path: Assets/Prefabs/BUilding/Fire-lvl2.prefab
+  artifactKey: Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire-lvl2.prefab using Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe91c841f2e78a68297d01daf72e3ef2') in 0.072667 seconds
+  Import took 0.076547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.236228 seconds.
+  path: Assets/Prefabs/BUilding/Fire-lvl2.prefab
+  artifactKey: Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire-lvl2.prefab using Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcdeb3481d21cc25f27264ef6cffa58') in 0.030538 seconds
+  Import took 0.035925 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008144 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.268 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.9 MB.
+System memory in use after: 70.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2131.
+Total: 2.283900 ms (FindLiveObjects: 0.263600 ms CreateObjectMapping: 0.045300 ms MarkObjects: 1.934900 ms  DeleteObjects: 0.038800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016052 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.645 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.9 MB.
+System memory in use after: 70.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2134.
+Total: 4.876000 ms (FindLiveObjects: 0.204400 ms CreateObjectMapping: 0.058100 ms MarkObjects: 4.577300 ms  DeleteObjects: 0.031900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012168 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.270 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.9 MB.
+System memory in use after: 70.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2137.
+Total: 2.455800 ms (FindLiveObjects: 0.209000 ms CreateObjectMapping: 0.068500 ms MarkObjects: 2.153800 ms  DeleteObjects: 0.022900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014260 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.173 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.9 MB.
+System memory in use after: 70.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2140.
+Total: 9.584300 ms (FindLiveObjects: 0.291200 ms CreateObjectMapping: 0.140700 ms MarkObjects: 9.130200 ms  DeleteObjects: 0.020600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015220 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.960 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.9 MB.
+System memory in use after: 70.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2143.
+Total: 1.567400 ms (FindLiveObjects: 0.164400 ms CreateObjectMapping: 0.045200 ms MarkObjects: 1.342800 ms  DeleteObjects: 0.013900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1524.729079 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1504aad1b18d2c789152f6a87d8fec8') in 0.064854 seconds
+  Import took 0.067053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Prefabs/BUilding/Fire-lvl2.prefab
+  artifactKey: Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire-lvl2.prefab using Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e233c734b88c408dd9145480d447942') in 0.009906 seconds
+  Import took 0.012019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e59fbd6c6b58f8dc9a2ae2f79955272') in 0.013700 seconds
+  Import took 0.016377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd17662ac63e79bee1041c46be665e5c9') in 0.009540 seconds
+  Import took 0.012113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Prefabs/BUilding/Fire.prefab
+  artifactKey: Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire.prefab using Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f54e5599a4ca3f4b585ef84539b73f0') in 0.025715 seconds
+  Import took 0.028610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da0897f4d165fa9e09d827ed519a067e') in 0.008471 seconds
+  Import took 0.011031 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006160 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.151 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2147.
+Total: 2.966100 ms (FindLiveObjects: 0.389500 ms CreateObjectMapping: 0.165400 ms MarkObjects: 2.335000 ms  DeleteObjects: 0.074600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 641.215465 seconds.
+  path: Assets/Prefabs/BUilding/Fire-lvl2.prefab
+  artifactKey: Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire-lvl2.prefab using Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be60e6be05869266993c7c1e5d361371') in 0.063837 seconds
+  Import took 0.066999 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003763 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.150 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2151.
+Total: 1.994100 ms (FindLiveObjects: 0.188300 ms CreateObjectMapping: 0.051700 ms MarkObjects: 1.738300 ms  DeleteObjects: 0.014800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.287931 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cbaf4e853c3276f834b50ac513b7516') in 0.063270 seconds
+  Import took 0.067642 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007474 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.966 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2155.
+Total: 1.641900 ms (FindLiveObjects: 0.160300 ms CreateObjectMapping: 0.046500 ms MarkObjects: 1.419300 ms  DeleteObjects: 0.014100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003913 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2158.
+Total: 1.915300 ms (FindLiveObjects: 0.228800 ms CreateObjectMapping: 0.069200 ms MarkObjects: 1.603200 ms  DeleteObjects: 0.013100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 175.968488 seconds.
+  path: Assets/Prefabs/BUilding/Fire-lvl2.prefab
+  artifactKey: Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire-lvl2.prefab using Guid(827dd6421c03cca48a98be7fd8f0874e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '997aa92de22ce1ca0f43590c81f854dc') in 0.088375 seconds
+  Import took 0.090754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.301386 seconds.
+  path: Assets/Prefabs/BUilding/Fire.prefab
+  artifactKey: Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/Fire.prefab using Guid(51ccf98cdb79f014d81a2f6865d63d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca4f9a09d8ad310f9110208891c20d3') in 0.025988 seconds
+  Import took 0.030134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.493886 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab
+  artifactKey: Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Lamp.prefab using Guid(53c58519dc9e4204193e46af3e10e59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d93bdf21404461d933fa4e32dbfe541') in 0.015654 seconds
+  Import took 0.018287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.535048 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab
+  artifactKey: Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign A.prefab using Guid(c57f525eec3d38545b144295591ee07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229b77aa70c39cba668be83e5e015616') in 0.041769 seconds
+  Import took 0.045360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.113395 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab
+  artifactKey: Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Road Sign B.prefab using Guid(6f14211dec0d6e64dad2905a46f59003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3897f122f6b84be7ffe4044f6ba220') in 0.011852 seconds
+  Import took 0.014971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.084091 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd60e962b25d38ec1402e0b40818633') in 0.018743 seconds
+  Import took 0.026577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007307 seconds.
+  path: Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab
+  artifactKey: Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BUilding/TX Village Props Training Dummy.prefab using Guid(a06ad9ffd89578240b77eb0f81a7667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd60e962b25d38ec1402e0b40818633') in 0.037880 seconds
+  Import took 0.044832 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004693 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.206 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2162.
+Total: 2.894600 ms (FindLiveObjects: 0.327800 ms CreateObjectMapping: 0.144300 ms MarkObjects: 2.357200 ms  DeleteObjects: 0.062800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
