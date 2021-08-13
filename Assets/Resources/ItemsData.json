@@ -1,0 +1,16 @@
+[
+ {
+	"id": 0,
+	"type": "Weapong",
+	"title": "bolas",
+	"stackable": true,
+	"amount": 1
+ },
+ {
+	"id": 1,
+	"type": "Head",
+	"title": "grapple",
+	"stackable": false,
+	"amount": 1
+ }
+]
