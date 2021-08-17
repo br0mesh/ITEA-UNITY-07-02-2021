@@ -37,7 +37,7 @@ namespace Assets.Scipts.Inventory
         }
         public void UpdateUI()
         {
-            itemImage.sprite = item.Sprite;
+            itemImage.sprite = item.GetSprite();
             AmountText.text = item.Amount.ToString();
         }
         public void SetSlot(InventorySlot slot)

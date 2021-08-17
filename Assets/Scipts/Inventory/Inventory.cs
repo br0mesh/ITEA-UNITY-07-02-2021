@@ -9,7 +9,7 @@ namespace Assets.Scipts.Inventory
         private ItemDatabase database;
 
         public List<InventorySlot> slots = new List<InventorySlot>();
-
+        [SerializeField] string path = "/Resources/ItemsDataInventory.json";
         [SerializeField]
         private GameObject inventoryPanel;
         [SerializeField]
@@ -20,8 +20,36 @@ namespace Assets.Scipts.Inventory
         private GameObject inventoryItem;
         [SerializeField]
         private int slotAmount;
+
+
+        private InventoryUtility inventoryUtility;
+
+        [ContextMenu("Save")]
+        public void Save()
+        {
+            List<Item> items = new List<Item>();
+            for (int i = 0; i < slots.Count; i++)
+            {
+                if(slots[i].ItemUIView == null)
+                {
+                    items.Add(null);
+                }
+                else
+                {
+                    items.Add(slots[i].ItemUIView.Item);
+                }
+            }
+
+            inventoryUtility.Save(items.ToArray());
+        }
+        [ContextMenu("Load")]
+        public void Load()
+        {
+            inventoryUtility.Load(path);
+        }
         void Start()
         {
+            inventoryUtility = new InventoryUtility();
             database = GetComponent<ItemDatabase>();
 
             for (int i = 0; i < slotAmount; i++)
@@ -29,13 +57,24 @@ namespace Assets.Scipts.Inventory
                 slots.Add(Instantiate(inventorySlot, slotPanel.transform).GetComponent<InventorySlot>());
             }
 
-            Item itemToAdd = database.FletchItemByID(0);
-            itemToAdd.Amount = 1;
-            AddItem(itemToAdd);
-            itemToAdd.ID = 0;
-            AddItem(itemToAdd);
-            itemToAdd.ID = 1;
-            AddItem(itemToAdd);
+            Item[] items = inventoryUtility.Load(path);
+
+            for (int i = 0; i < items.Length; i++)
+            {
+                if(items[i] != null)
+                {
+                    CreateItem(items[i], slots[i]);
+                }
+            }
+            //Item itemToAdd = database.FletchItemByID(0);
+            //itemToAdd.Amount = 1;
+            //AddItem(itemToAdd);
+            //itemToAdd = database.FletchItemByID(1);
+            //itemToAdd.Amount = 1;
+            //AddItem(itemToAdd);
+            //itemToAdd = database.FletchItemByID(0);
+            //itemToAdd.Amount = 1;
+            //AddItem(itemToAdd);
         }
         public bool HasFreeSpace()
         {
@@ -72,19 +111,33 @@ namespace Assets.Scipts.Inventory
             {
                 if (slots[i].ItemUIView == null)
                 {
-                    GameObject itemObj = Instantiate(inventoryItem, slots[i].transform);
+                    CreateItem(item, slots[i]);
+                    //GameObject itemObj = Instantiate(inventoryItem, slots[i].transform);
 
-                    ItemUIView itemUIView = itemObj.GetComponent<ItemUIView>();
+                    //ItemUIView itemUIView = itemObj.GetComponent<ItemUIView>();
 
-                    itemUIView.Init(item);
-                    itemUIView.SetSlot(slots[i]);
+                    //itemUIView.Init(item);
+                    //itemUIView.SetSlot(slots[i]);
 
-                    slots[i].SetItemUIView(itemUIView);
+                    //slots[i].SetItemUIView(itemUIView);
 
-                    return itemUIView;
+                    //return itemUIView;
                 }
             }
             return null;
+        }
+        private ItemUIView CreateItem(Item item, InventorySlot slot)
+        {
+            GameObject itemObj = Instantiate(inventoryItem, slot.transform);
+
+            ItemUIView itemUIView = itemObj.GetComponent<ItemUIView>();
+
+            itemUIView.Init(item);
+            itemUIView.SetSlot(slot);
+
+            slot.SetItemUIView(itemUIView);
+
+            return itemUIView;
         }
         private ItemUIView IsInInventory(int id)
         {

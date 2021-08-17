@@ -1,26 +1,40 @@
 ﻿
+using System;
 using UnityEngine;
 
+[Serializable]
 public class Item
 {
-    public int ID { get; set; }
-    public string Type { get; set; }
-    public string Title { get; set; }
-    public Sprite Sprite { get; set; }
-    public bool Stackable { get; set; }
+    public int ID;
+    public string Type;
+    public string Title;
+    [NonSerialized]private Sprite sprite;
+    public bool Stackable;
+    public int Amount;
+    public int MaxStack;
 
-    public int Amount { get; set; }
-    public int MaxStack { get; set; }
+    public Item()
+    {
 
+    }
     public Item(int ID, string Type, string Title, bool Stackable, int Amount)
     {
         this.ID = ID;
         this.Type = Type;
         this.Title = Title;
-        this.Sprite = (Sprite)Resources.Load<Sprite>("Sprites/Items/" + Title);
-        if (!Sprite) Debug.LogError("Not found: " + Title);
+        SetSprite();
         this.Stackable = Stackable;
         this.Amount = Amount;
         MaxStack = 99;
+    }
+
+    public void SetSprite()
+    {
+        this.sprite = (Sprite)Resources.Load<Sprite>("Sprites/Items/" + Title);
+        if (!sprite) Debug.LogError("Not found: " + Title);
+    }
+    public Sprite GetSprite()
+    {
+        return sprite;
     }
 }
