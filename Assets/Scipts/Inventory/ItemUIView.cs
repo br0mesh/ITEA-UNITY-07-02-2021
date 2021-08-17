@@ -29,18 +29,6 @@ namespace Assets.Scipts.Inventory
         {
             get => slot;
         }
-        //private int slot;
-        //public int Slot
-        //{
-        //    get
-        //    {
-        //        return slot;
-        //    }
-        //    set
-        //    {
-        //        slot = value;
-        //    }
-        //}
 
         public void Init(Item item)
         {

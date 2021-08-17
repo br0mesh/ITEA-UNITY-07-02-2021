@@ -8,7 +8,6 @@ namespace Assets.Scipts.Inventory
     {
         private ItemDatabase database;
 
-       // public List<Item> items = new List<Item>();
         public List<InventorySlot> slots = new List<InventorySlot>();
 
         [SerializeField]
@@ -27,73 +26,81 @@ namespace Assets.Scipts.Inventory
 
             for (int i = 0; i < slotAmount; i++)
             {
-                items.Add(new Item());
                 slots.Add(Instantiate(inventorySlot, slotPanel.transform).GetComponent<InventorySlot>());
-                slots[i].ID = i;
             }
 
-            AddItem(0, 1);
-            AddItem(1, 1);
-            AddItem(0, 1);
+            Item itemToAdd = database.FletchItemByID(0);
+            itemToAdd.Amount = 1;
+            AddItem(itemToAdd);
+            itemToAdd.ID = 0;
+            AddItem(itemToAdd);
+            itemToAdd.ID = 1;
+            AddItem(itemToAdd);
         }
-       // public ItemUIView GetIte
-        public bool AddItem(int id, int amount)
+        public bool HasFreeSpace()
         {
-            Item itemToAdd = database.FletchItemByID(id);
-            itemToAdd.Amount = amount;
-
-            if (itemToAdd.ID == -1) return false;
-
+            return true;
+        }
+        public ItemUIView AddItem(Item itemToAdd)
+        {
             if (itemToAdd.Stackable)
             {
-                InventorySlot slot = IsInInventory(itemToAdd.ID);
-                if (slot != null)
+                ItemUIView itemUIView = IsInInventory(itemToAdd.ID);
+                if (itemUIView != null)
                 {
-                    ItemUIView itemData = slot.transform.GetChild(0).GetComponent<ItemUIView>();
-
-                    if(itemData.Item.Amount + itemToAdd.Amount > itemData.Item.MaxStack)
+                    if (itemUIView.Item.Amount + itemToAdd.Amount > itemUIView.Item.MaxStack)
                     {
-                        int overMaxStackAmount = (itemData.Item.Amount + itemToAdd.Amount) - itemData.Item.MaxStack;
+                        int overMaxStackAmount = (itemUIView.Item.Amount + itemToAdd.Amount) - itemUIView.Item.MaxStack;
                         itemToAdd.Amount -= overMaxStackAmount;
-                        itemData.Item.Amount = itemData.Item.MaxStack;
+                        itemUIView.Item.Amount = itemUIView.Item.MaxStack;
                         CreateItem(itemToAdd);
                     }
                     else
                     {
-                        itemData.Item.Amount += amount;
-                        itemData.UpdateUI();
+                        itemUIView.Item.Amount += itemToAdd.Amount;
+                        itemUIView.UpdateUI();
                     }
+                    return itemUIView;
                 }
             }
 
             return CreateItem(itemToAdd);
         }
-        private bool CreateItem(Item item)
+        private ItemUIView CreateItem(Item item)
         {
-            for (int i = 0; i < items.Count; i++)
+            for (int i = 0; i < slots.Count; i++)
             {
-                if (items[i].ID == -1)
+                if (slots[i].ItemUIView == null)
                 {
-                    items[i] = item;
                     GameObject itemObj = Instantiate(inventoryItem, slots[i].transform);
 
                     ItemUIView itemUIView = itemObj.GetComponent<ItemUIView>();
 
-                    itemUIView.Init(items[i]);
+                    itemUIView.Init(item);
                     itemUIView.SetSlot(slots[i]);
 
-                    return true;
+                    slots[i].SetItemUIView(itemUIView);
+
+                    return itemUIView;
                 }
             }
-            return false;
+            return null;
         }
-        private InventorySlot IsInInventory(int id)
+        private ItemUIView IsInInventory(int id)
         {
-            for (int i = 0; i < items.Count; i++)
+            for (int i = 0; i < slots.Count; i++)
             {
-                if (items[i].ID == id)
-                    return slots[i];
+                if (slots[i].ItemUIView == null)
+                {
+                    continue;
+                }
+
+                if (slots[i].ItemUIView.Item.ID == id)
+                {
+                    return slots[i].ItemUIView;
+                }
             }
+
             return null;
         }
     }

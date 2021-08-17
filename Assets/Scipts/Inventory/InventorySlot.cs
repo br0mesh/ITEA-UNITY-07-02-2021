@@ -16,17 +16,10 @@ namespace Assets.Scipts.Inventory
             get => itemUIView;
         }
 
-        private int id;
-        public int ID
+        public void SetItemUIView(ItemUIView itemUIView)
         {
-            get { return id; }
-            set { id = value; }
-        }
-
-        public void SetItem(Item item)
-        {
-            itemUIView.Init(item);
-            itemUIView.OnItemStartDrag += ItemGraged;
+            this.itemUIView = itemUIView;
+            this.itemUIView.OnItemStartDrag += ItemGraged;
         }
 
         private void ItemGraged()
@@ -38,36 +31,17 @@ namespace Assets.Scipts.Inventory
         public void OnDrop(PointerEventData eventData)
         {
             ItemUIView droppedItem = eventData.pointerDrag.GetComponent<ItemUIView>();
-            if (itemUIView == null) //if (inventory.items[id].ID == -1)
+            if (itemUIView == null)
             {
-                //droppedItem.s
-                //!!!!! //inventory.items[droppedItem.Slot] = new Item(-1, "null", "null", false, 0);
                 itemUIView = droppedItem;
                 itemUIView.SetSlot(this);
-                //droppedItem.Slot = id;
-                //droppedItem.SetSlot(transform);
-                //inventory.items[droppedItem.Slot] = droppedItem.Item;
             }
-            //else if (itemUIView.Item.ID == droppedItem.Item.ID) //else if (inventory.items[id].ID == droppedItem.Item.ID)
-            //{
-            //    //TODO Stack items
-            //}
-            else if(itemUIView.Item.ID != droppedItem.Item.ID)//else if (inventory.items[id].ID != -1)
+            else if(itemUIView.Item.ID != droppedItem.Item.ID)
             {
                 itemUIView.SetSlot(droppedItem.Slot);
 
                 itemUIView = droppedItem;
                 itemUIView.SetSlot(this);
-
-                
-                //Transform itemToSwap = transform.GetChild(0);
-                //ItemUIView itemData = itemToSwap.gameObject.GetComponent<ItemUIView>();
-                //inventory.items[droppedItem.Slot] = itemData.Item;
-                //itemData.Slot = droppedItem.Slot;
-                //itemData.SetSlot(inventory.slots[droppedItem.Slot].transform);
-                //droppedItem.Slot = id;
-                //droppedItem.SetSlot(inventory.slots[id].transform);
-                //inventory.items[droppedItem.Slot] = droppedItem.Item;
             }
         }
     }

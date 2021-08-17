@@ -12,11 +12,6 @@ public class Item
     public int Amount { get; set; }
     public int MaxStack { get; set; }
 
-    public Item()
-    {
-        ID = -1;
-    }
-
     public Item(int ID, string Type, string Title, bool Stackable, int Amount)
     {
         this.ID = ID;
